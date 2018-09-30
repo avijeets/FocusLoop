@@ -22,23 +22,29 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Distractions Interface Controller-->
         <scene sceneID="IrZ-JT-HkW">
             <objects>
-                <controller id="mds-n4-gqc">
+                <controller id="mds-n4-gqc" customClass="DistractionsInterfaceController" customModule="FocusLoop_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="Xvk-zf-id8">
                             <items>
-                                <tableRow id="Zk9-qJ-XK2">
+                                <tableRow identifier="distractionRow" id="Zk9-qJ-XK2" customClass="DistractionRowController" customModule="FocusLoop_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="84u-d7-KnS">
                                         <items>
                                             <label width="1" height="1" alignment="left" text="Label" textAlignment="center" id="HDn-7V-hZm"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="distractionLabel" destination="HDn-7V-hZm" id="C8R-Gl-xaI"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="distractionTable" destination="Xvk-zf-id8" id="dFX-ng-xey"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="508" y="345"/>
