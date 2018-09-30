@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A499F7421606CC9009F5BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A499F7321606CC9009F5BC0 /* AppDelegate.swift */; };
+		8A499F7621606CC9009F5BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A499F7521606CC9009F5BC0 /* ViewController.swift */; };
+		8A499F7921606CC9009F5BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A499F7721606CC9009F5BC0 /* Main.storyboard */; };
+		8A499F7B21606CCE009F5BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A499F7A21606CCE009F5BC0 /* Assets.xcassets */; };
+		8A499F7E21606CCE009F5BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A499F7C21606CCE009F5BC0 /* LaunchScreen.storyboard */; };
+		8A499F8321606CCF009F5BC0 /* FocusLoop WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8A499F8221606CCF009F5BC0 /* FocusLoop WatchKit App.app */; };
+		8A499F8921606CCF009F5BC0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A499F8721606CCF009F5BC0 /* Interface.storyboard */; };
+		8A499F8B21606CD0009F5BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A499F8A21606CD0009F5BC0 /* Assets.xcassets */; };
+		8A499F9221606CD0009F5BC0 /* FocusLoop WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A499F9121606CD0009F5BC0 /* FocusLoop WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A499F9721606CD0009F5BC0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A499F9621606CD0009F5BC0 /* InterfaceController.swift */; };
+		8A499F9921606CD0009F5BC0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A499F9821606CD0009F5BC0 /* ExtensionDelegate.swift */; };
+		8A499F9B21606CD0009F5BC0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A499F9A21606CD0009F5BC0 /* NotificationController.swift */; };
+		8A499F9D21606CD1009F5BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A499F9C21606CD1009F5BC0 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A499F8421606CCF009F5BC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A499F6821606CC9009F5BC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A499F8121606CCF009F5BC0;
+			remoteInfo = "FocusLoop WatchKit App";
+		};
+		8A499F9321606CD0009F5BC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A499F6821606CC9009F5BC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A499F9021606CD0009F5BC0;
+			remoteInfo = "FocusLoop WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A499FA521606CD1009F5BC0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8A499F9221606CD0009F5BC0 /* FocusLoop WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A499FA921606CD1009F5BC0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8A499F8321606CCF009F5BC0 /* FocusLoop WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A499F7021606CC9009F5BC0 /* FocusLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A499F7321606CC9009F5BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A499F7521606CC9009F5BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A499F7821606CC9009F5BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A499F7A21606CCE009F5BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A499F7D21606CCE009F5BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A499F7F21606CCE009F5BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A499F8221606CCF009F5BC0 /* FocusLoop WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FocusLoop WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A499F8821606CCF009F5BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8A499F8A21606CD0009F5BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A499F8C21606CD0009F5BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A499F9121606CD0009F5BC0 /* FocusLoop WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FocusLoop WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A499F9621606CD0009F5BC0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8A499F9821606CD0009F5BC0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8A499F9A21606CD0009F5BC0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8A499F9C21606CD1009F5BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A499F9E21606CD1009F5BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A499F9F21606CD1009F5BC0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A499F6D21606CC9009F5BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A499F8E21606CD0009F5BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A499F6721606CC9009F5BC0 = {
+			isa = PBXGroup;
+			children = (
+				8A499F7221606CC9009F5BC0 /* FocusLoop */,
+				8A499F8621606CCF009F5BC0 /* FocusLoop WatchKit App */,
+				8A499F9521606CD0009F5BC0 /* FocusLoop WatchKit Extension */,
+				8A499F7121606CC9009F5BC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A499F7121606CC9009F5BC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A499F7021606CC9009F5BC0 /* FocusLoop.app */,
+				8A499F8221606CCF009F5BC0 /* FocusLoop WatchKit App.app */,
+				8A499F9121606CD0009F5BC0 /* FocusLoop WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A499F7221606CC9009F5BC0 /* FocusLoop */ = {
+			isa = PBXGroup;
+			children = (
+				8A499F7321606CC9009F5BC0 /* AppDelegate.swift */,
+				8A499F7521606CC9009F5BC0 /* ViewController.swift */,
+				8A499F7721606CC9009F5BC0 /* Main.storyboard */,
+				8A499F7A21606CCE009F5BC0 /* Assets.xcassets */,
+				8A499F7C21606CCE009F5BC0 /* LaunchScreen.storyboard */,
+				8A499F7F21606CCE009F5BC0 /* Info.plist */,
+			);
+			path = FocusLoop;
+			sourceTree = "<group>";
+		};
+		8A499F8621606CCF009F5BC0 /* FocusLoop WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8A499F8721606CCF009F5BC0 /* Interface.storyboard */,
+				8A499F8A21606CD0009F5BC0 /* Assets.xcassets */,
+				8A499F8C21606CD0009F5BC0 /* Info.plist */,
+			);
+			path = "FocusLoop WatchKit App";
+			sourceTree = "<group>";
+		};
+		8A499F9521606CD0009F5BC0 /* FocusLoop WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8A499F9621606CD0009F5BC0 /* InterfaceController.swift */,
+				8A499F9821606CD0009F5BC0 /* ExtensionDelegate.swift */,
+				8A499F9A21606CD0009F5BC0 /* NotificationController.swift */,
+				8A499F9C21606CD1009F5BC0 /* Assets.xcassets */,
+				8A499F9E21606CD1009F5BC0 /* Info.plist */,
+				8A499F9F21606CD1009F5BC0 /* PushNotificationPayload.apns */,
+			);
+			path = "FocusLoop WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A499F6F21606CC9009F5BC0 /* FocusLoop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A499FAA21606CD1009F5BC0 /* Build configuration list for PBXNativeTarget "FocusLoop" */;
+			buildPhases = (
+				8A499F6C21606CC9009F5BC0 /* Sources */,
+				8A499F6D21606CC9009F5BC0 /* Frameworks */,
+				8A499F6E21606CC9009F5BC0 /* Resources */,
+				8A499FA921606CD1009F5BC0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A499F8521606CCF009F5BC0 /* PBXTargetDependency */,
+			);
+			name = FocusLoop;
+			productName = FocusLoop;
+			productReference = 8A499F7021606CC9009F5BC0 /* FocusLoop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A499F8121606CCF009F5BC0 /* FocusLoop WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A499FA621606CD1009F5BC0 /* Build configuration list for PBXNativeTarget "FocusLoop WatchKit App" */;
+			buildPhases = (
+				8A499F8021606CCF009F5BC0 /* Resources */,
+				8A499FA521606CD1009F5BC0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A499F9421606CD0009F5BC0 /* PBXTargetDependency */,
+			);
+			name = "FocusLoop WatchKit App";
+			productName = "FocusLoop WatchKit App";
+			productReference = 8A499F8221606CCF009F5BC0 /* FocusLoop WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8A499F9021606CD0009F5BC0 /* FocusLoop WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A499FA221606CD1009F5BC0 /* Build configuration list for PBXNativeTarget "FocusLoop WatchKit Extension" */;
+			buildPhases = (
+				8A499F8D21606CD0009F5BC0 /* Sources */,
+				8A499F8E21606CD0009F5BC0 /* Frameworks */,
+				8A499F8F21606CD0009F5BC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FocusLoop WatchKit Extension";
+			productName = "FocusLoop WatchKit Extension";
+			productReference = 8A499F9121606CD0009F5BC0 /* FocusLoop WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A499F6821606CC9009F5BC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Avijeet Sachdev";
+				TargetAttributes = {
+					8A499F6F21606CC9009F5BC0 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					8A499F8121606CCF009F5BC0 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					8A499F9021606CD0009F5BC0 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 8A499F6B21606CC9009F5BC0 /* Build configuration list for PBXProject "FocusLoop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A499F6721606CC9009F5BC0;
+			productRefGroup = 8A499F7121606CC9009F5BC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A499F6F21606CC9009F5BC0 /* FocusLoop */,
+				8A499F8121606CCF009F5BC0 /* FocusLoop WatchKit App */,
+				8A499F9021606CD0009F5BC0 /* FocusLoop WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A499F6E21606CC9009F5BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A499F7E21606CCE009F5BC0 /* LaunchScreen.storyboard in Resources */,
+				8A499F7B21606CCE009F5BC0 /* Assets.xcassets in Resources */,
+				8A499F7921606CC9009F5BC0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A499F8021606CCF009F5BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A499F8B21606CD0009F5BC0 /* Assets.xcassets in Resources */,
+				8A499F8921606CCF009F5BC0 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A499F8F21606CD0009F5BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A499F9D21606CD1009F5BC0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A499F6C21606CC9009F5BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A499F7621606CC9009F5BC0 /* ViewController.swift in Sources */,
+				8A499F7421606CC9009F5BC0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A499F8D21606CD0009F5BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A499F9B21606CD0009F5BC0 /* NotificationController.swift in Sources */,
+				8A499F9921606CD0009F5BC0 /* ExtensionDelegate.swift in Sources */,
+				8A499F9721606CD0009F5BC0 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A499F8521606CCF009F5BC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A499F8121606CCF009F5BC0 /* FocusLoop WatchKit App */;
+			targetProxy = 8A499F8421606CCF009F5BC0 /* PBXContainerItemProxy */;
+		};
+		8A499F9421606CD0009F5BC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A499F9021606CD0009F5BC0 /* FocusLoop WatchKit Extension */;
+			targetProxy = 8A499F9321606CD0009F5BC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A499F7721606CC9009F5BC0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A499F7821606CC9009F5BC0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A499F7C21606CCE009F5BC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A499F7D21606CCE009F5BC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A499F8721606CCF009F5BC0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A499F8821606CCF009F5BC0 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A499FA021606CD1009F5BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A499FA121606CD1009F5BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A499FA321606CD1009F5BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PM5X37M9NZ;
+				INFOPLIST_FILE = "FocusLoop WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avijeets.FocusLoop.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		8A499FA421606CD1009F5BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PM5X37M9NZ;
+				INFOPLIST_FILE = "FocusLoop WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avijeets.FocusLoop.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		8A499FA721606CD1009F5BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PM5X37M9NZ;
+				IBSC_MODULE = FocusLoop_WatchKit_Extension;
+				INFOPLIST_FILE = "FocusLoop WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avijeets.FocusLoop.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		8A499FA821606CD1009F5BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PM5X37M9NZ;
+				IBSC_MODULE = FocusLoop_WatchKit_Extension;
+				INFOPLIST_FILE = "FocusLoop WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avijeets.FocusLoop.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		8A499FAB21606CD1009F5BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PM5X37M9NZ;
+				INFOPLIST_FILE = FocusLoop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avijeets.FocusLoop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A499FAC21606CD1009F5BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PM5X37M9NZ;
+				INFOPLIST_FILE = FocusLoop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avijeets.FocusLoop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A499F6B21606CC9009F5BC0 /* Build configuration list for PBXProject "FocusLoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A499FA021606CD1009F5BC0 /* Debug */,
+				8A499FA121606CD1009F5BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A499FA221606CD1009F5BC0 /* Build configuration list for PBXNativeTarget "FocusLoop WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A499FA321606CD1009F5BC0 /* Debug */,
+				8A499FA421606CD1009F5BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A499FA621606CD1009F5BC0 /* Build configuration list for PBXNativeTarget "FocusLoop WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A499FA721606CD1009F5BC0 /* Debug */,
+				8A499FA821606CD1009F5BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A499FAA21606CD1009F5BC0 /* Build configuration list for PBXNativeTarget "FocusLoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A499FAB21606CD1009F5BC0 /* Debug */,
+				8A499FAC21606CD1009F5BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A499F6821606CC9009F5BC0 /* Project object */;
+}
