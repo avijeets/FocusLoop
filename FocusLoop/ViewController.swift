@@ -30,6 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func getDistractions() {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let fetchReq = Distractions.fetchRequest() as NSFetchRequest<Distractions>
+        fetchReq.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
         
         do {
             distractionArr = try context.fetch(fetchReq) as [Distractions]
@@ -44,7 +45,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = distractionArr[indexPath.row].name
+        let formatter = DateFormatter()
+        let distractionItem = distractionArr[indexPath.row]
+        formatter.dateFormat = "MMM d h:mma"
+        cell.textLabel?.text = "\(distractionItem.name!) - \(formatter.string(from: distractionItem.date as! Date))"
         return cell
     }
 
