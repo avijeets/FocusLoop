@@ -73,6 +73,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         distraction.date = date as? Date
         
         saveContext()
+        
+        //Notification Config
+        let notif = Notification(name: Notification.Name(rawValue: "FocusInfo"))
+        NotificationCenter.default.post(notif)
     }
     
     // MARK: - Core Data stack

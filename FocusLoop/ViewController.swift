@@ -17,6 +17,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         distractionTable.dataSource = self
         distractionTable.delegate = self
         getDistractions()
+        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "FocusInfo"), object: nil, queue: nil) { (notification) in
+            DispatchQueue.main.async {
+                self.getDistractions()
+            }
+        }
     }
     
     @IBOutlet weak var distractionTable: UITableView!
