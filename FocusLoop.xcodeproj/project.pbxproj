@@ -23,6 +23,7 @@
 		8A499F9D21606CD1009F5BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A499F9C21606CD1009F5BC0 /* Assets.xcassets */; };
 		8A499FAF21607646009F5BC0 /* DistractionsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A499FAE21607646009F5BC0 /* DistractionsInterfaceController.swift */; };
 		8A499FB1216076BE009F5BC0 /* DistractionRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A499FB0216076BE009F5BC0 /* DistractionRowController.swift */; };
+		8A53B55C216415E10035AC4C /* NotificationsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53B55B216415E10035AC4C /* NotificationsInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		8A499F9F21606CD1009F5BC0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		8A499FAE21607646009F5BC0 /* DistractionsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistractionsInterfaceController.swift; sourceTree = "<group>"; };
 		8A499FB0216076BE009F5BC0 /* DistractionRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistractionRowController.swift; sourceTree = "<group>"; };
+		8A53B55B216415E10035AC4C /* NotificationsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				8A499FAE21607646009F5BC0 /* DistractionsInterfaceController.swift */,
 				8A499FB0216076BE009F5BC0 /* DistractionRowController.swift */,
 				8A499F9621606CD0009F5BC0 /* InterfaceController.swift */,
+				8A53B55B216415E10035AC4C /* NotificationsInterfaceController.swift */,
 				8A499F9A21606CD0009F5BC0 /* NotificationController.swift */,
 				8A499F9C21606CD1009F5BC0 /* Assets.xcassets */,
 				8A499F9E21606CD1009F5BC0 /* Info.plist */,
@@ -312,6 +315,7 @@
 			files = (
 				8A499FAF21607646009F5BC0 /* DistractionsInterfaceController.swift in Sources */,
 				8A499F9B21606CD0009F5BC0 /* NotificationController.swift in Sources */,
+				8A53B55C216415E10035AC4C /* NotificationsInterfaceController.swift in Sources */,
 				8A499F9921606CD0009F5BC0 /* ExtensionDelegate.swift in Sources */,
 				8A499F9721606CD0009F5BC0 /* InterfaceController.swift in Sources */,
 				8A499FB1216076BE009F5BC0 /* DistractionRowController.swift in Sources */,

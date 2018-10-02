@@ -57,16 +57,23 @@
             </objects>
             <point key="canvasLocation" x="508" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Notifications Interface Controller-->
         <scene sceneID="LAB-PI-Rjz">
             <objects>
-                <controller id="PhO-RV-ppS">
+                <controller id="PhO-RV-ppS" customClass="NotificationsInterfaceController" customModule="FocusLoop_WatchKit_Extension">
                     <items>
                         <label width="136" height="56" alignment="left" text="Set Routine Reminders:" textAlignment="center" numberOfLines="2" id="RYf-ja-J2p"/>
-                        <picker height="100" alignment="left" id="6or-AW-Fyo"/>
+                        <picker height="70" alignment="left" focusStyle="stack" id="6or-AW-Fyo">
+                            <connections>
+                                <action selector="pickerChanged:" destination="PhO-RV-ppS" id="kvr-dj-HAj"/>
+                            </connections>
+                        </picker>
                         <button width="1" alignment="left" title="Start" id="bhF-YB-s5F"/>
                         <button width="1" alignment="left" title="Delete" id="p9B-eT-Lsz"/>
                     </items>
+                    <connections>
+                        <outlet property="timePicker" destination="6or-AW-Fyo" id="OZL-3u-Cap"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="787" y="345"/>
