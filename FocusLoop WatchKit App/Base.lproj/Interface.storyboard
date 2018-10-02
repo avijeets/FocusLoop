@@ -15,8 +15,16 @@
                     <items>
                         <label width="136" alignment="left" text="Stay Focused" textAlignment="center" id="7f0-by-Nnr"/>
                         <separator alignment="left" id="bsz-Oc-sSi"/>
-                        <button width="1" alignment="left" title="I'm Distracted " id="l7N-fy-62H"/>
-                        <button width="1" alignment="left" title="Set Reminder" id="DUp-bo-Pqr"/>
+                        <button width="1" alignment="left" title="I'm Distracted " id="l7N-fy-62H">
+                            <connections>
+                                <segue destination="mds-n4-gqc" kind="push" id="CPn-7Q-7e3"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Set Reminder" id="DUp-bo-Pqr">
+                            <connections>
+                                <segue destination="PhO-RV-ppS" kind="push" id="oMI-Dl-bKS"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>

@@ -33,7 +33,7 @@ class DistractionsInterfaceController: WKInterfaceController {
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         let distraction = distractions[rowIndex]
         let date = Date()
-        WCSession.default.transferUserInfo(["hey":"testing"])
+        WCSession.default.transferUserInfo(["date": date, "name": distraction])
     }
 
 }

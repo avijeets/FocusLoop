@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A1CD54821617590008C11C5 /* FocusData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CD54621617590008C11C5 /* FocusData.xcdatamodeld */; };
 		8A499F7421606CC9009F5BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A499F7321606CC9009F5BC0 /* AppDelegate.swift */; };
 		8A499F7621606CC9009F5BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A499F7521606CC9009F5BC0 /* ViewController.swift */; };
 		8A499F7921606CC9009F5BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A499F7721606CC9009F5BC0 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A1CD54721617590008C11C5 /* FocusData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FocusData.xcdatamodel; sourceTree = "<group>"; };
 		8A499F7021606CC9009F5BC0 /* FocusLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A499F7321606CC9009F5BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A499F7521606CC9009F5BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				8A499F7321606CC9009F5BC0 /* AppDelegate.swift */,
 				8A499F7521606CC9009F5BC0 /* ViewController.swift */,
 				8A499F7721606CC9009F5BC0 /* Main.storyboard */,
+				8A1CD54621617590008C11C5 /* FocusData.xcdatamodeld */,
 				8A499F7A21606CCE009F5BC0 /* Assets.xcassets */,
 				8A499F7C21606CCE009F5BC0 /* LaunchScreen.storyboard */,
 				8A499F7F21606CCE009F5BC0 /* Info.plist */,
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1CD54821617590008C11C5 /* FocusData.xcdatamodeld in Sources */,
 				8A499F7621606CC9009F5BC0 /* ViewController.swift in Sources */,
 				8A499F7421606CC9009F5BC0 /* AppDelegate.swift in Sources */,
 			);
@@ -631,6 +635,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8A1CD54621617590008C11C5 /* FocusData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8A1CD54721617590008C11C5 /* FocusData.xcdatamodel */,
+			);
+			currentVersion = 8A1CD54721617590008C11C5 /* FocusData.xcdatamodel */;
+			path = FocusData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8A499F6821606CC9009F5BC0 /* Project object */;
 }
