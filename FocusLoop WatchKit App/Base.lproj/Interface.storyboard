@@ -73,7 +73,11 @@
                                 <action selector="startNotif" destination="PhO-RV-ppS" id="SuX-KR-Q6U"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Delete" id="p9B-eT-Lsz"/>
+                        <button width="1" alignment="left" title="Delete" id="p9B-eT-Lsz">
+                            <connections>
+                                <action selector="deleteTapped" destination="PhO-RV-ppS" id="rf2-pC-aLD"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="timePicker" destination="6or-AW-Fyo" id="OZL-3u-Cap"/>
