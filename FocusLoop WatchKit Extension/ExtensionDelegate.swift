@@ -26,8 +26,10 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate, UNUse
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (authBool, error) in
             if authBool {
                 // Refactor with enums?
+                // Yes leads to dismissal
+                // No leads to launching app's distractions list
                 let yes = UNNotificationAction(identifier: "yes", title: "Yes", options: [])
-                let no = UNNotificationAction(identifier: "no", title: "No", options: [])
+                let no = UNNotificationAction(identifier: "no", title: "No", options: [.foreground])
                 
                 
                 let category = UNNotificationCategory(identifier: "focusedCategory", actions: [yes, no], intentIdentifiers: [], options: [])
@@ -85,6 +87,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate, UNUse
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        print("Sup")
+        if response.actionIdentifier == "no" {
+            WKExtension.shared().rootInterfaceController?.popToRootController()
+            WKExtension.shared().rootInterfaceController?.pushController(withName: "distractionView", context: nil)
+        }
     }
 }

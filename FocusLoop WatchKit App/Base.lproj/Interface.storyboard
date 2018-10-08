@@ -30,10 +30,10 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Distractions Interface Controller-->
+        <!--distractionView-->
         <scene sceneID="IrZ-JT-HkW">
             <objects>
-                <controller id="mds-n4-gqc" customClass="DistractionsInterfaceController" customModule="FocusLoop_WatchKit_Extension">
+                <controller identifier="distractionView" id="mds-n4-gqc" customClass="DistractionsInterfaceController" customModule="FocusLoop_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="Xvk-zf-id8">
                             <items>
