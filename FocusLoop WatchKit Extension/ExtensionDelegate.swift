@@ -8,8 +8,9 @@
 
 import WatchKit
 import WatchConnectivity
+import UserNotifications
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate, UNUserNotificationCenterDelegate {
     // Connectivity to iOS
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         if error != nil {
@@ -17,6 +18,22 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         }
         else {
             print("Ready to go")
+        }
+    }
+    
+    //Notification Capabilities
+    func notificationPermissions() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (authBool, error) in
+            if authBool {
+                // Refactor with enums?
+                let yes = UNNotificationAction(identifier: "yes", title: "Yes", options: [])
+                let no = UNNotificationAction(identifier: "no", title: "No", options: [])
+                
+                
+                let category = UNNotificationCategory(identifier: "focusedCategory", actions: [yes, no], intentIdentifiers: [], options: [])
+                UNUserNotificationCenter.current().setNotificationCategories([category])
+                UNUserNotificationCenter.current().delegate = self
+            }
         }
     }
 
@@ -65,5 +82,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                 task.setTaskCompletedWithSnapshot(false)
             }
         }
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("Sup")
     }
 }

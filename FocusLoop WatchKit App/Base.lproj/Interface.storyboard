@@ -68,7 +68,11 @@
                                 <action selector="pickerChanged:" destination="PhO-RV-ppS" id="kvr-dj-HAj"/>
                             </connections>
                         </picker>
-                        <button width="1" alignment="left" title="Start" id="bhF-YB-s5F"/>
+                        <button width="1" alignment="left" title="Start" id="bhF-YB-s5F">
+                            <connections>
+                                <action selector="startNotif" destination="PhO-RV-ppS" id="SuX-KR-Q6U"/>
+                            </connections>
+                        </button>
                         <button width="1" alignment="left" title="Delete" id="p9B-eT-Lsz"/>
                     </items>
                     <connections>
@@ -76,7 +80,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="787" y="345"/>
+            <point key="canvasLocation" x="508" y="789"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -93,7 +97,7 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="826" y="345"/>
         </scene>
     </scenes>
 </document>

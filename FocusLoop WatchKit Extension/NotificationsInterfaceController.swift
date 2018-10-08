@@ -8,7 +8,7 @@
 
 import WatchKit
 import Foundation
-
+import UserNotifications
 
 class NotificationsInterfaceController: WKInterfaceController {
 
@@ -17,9 +17,9 @@ class NotificationsInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         var items : [WKPickerItem] = []
-        for hour in 1..24 {
+        for hour in 1...24 {
             let pickerItem = WKPickerItem()
-            if hour = 1 {
+            if hour == 1 {
                 pickerItem.title = "\(hour) hours"
             }
             else {
@@ -27,9 +27,28 @@ class NotificationsInterfaceController: WKInterfaceController {
             }
             items.append(pickerItem)
         }
-        timePicker.setItems(<#T##items: [WKPickerItem]?##[WKPickerItem]?#>)
+        timePicker.setItems(items)
+        
+        if let delegate = WKExtension.shared().delegate as? ExtensionDelegate {
+            delegate.notificationPermissions()
+        }
     }
 
+    @IBAction func startNotif() {
+        let content = UNMutableNotificationContent()
+        content.body = "Are you still productive?"
+        content.categoryIdentifier = "focusedCategory"
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: NSUUID().uuidString, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add( request) { (error) in
+            if error != nil {
+                print("Error caught")
+            }
+            else {
+                print("No error found")
+            }
+        }
+    }
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
