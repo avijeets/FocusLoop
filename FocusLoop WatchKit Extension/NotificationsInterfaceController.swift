@@ -13,6 +13,7 @@ import UserNotifications
 class NotificationsInterfaceController: WKInterfaceController {
     var hours = 1
     @IBOutlet weak var timePicker: WKInterfacePicker!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -39,6 +40,8 @@ class NotificationsInterfaceController: WKInterfaceController {
             let content = UNMutableNotificationContent()
             content.body = "Are you still productive?"
             content.categoryIdentifier = "focusedCategory"
+            
+            //amount of hours based off of seconds multiplied
             let secondRound = 60 * 60 * hour
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(secondRound), repeats: false)
             let request = UNNotificationRequest(identifier: NSUUID().uuidString, content: content, trigger: trigger)
@@ -54,9 +57,11 @@ class NotificationsInterfaceController: WKInterfaceController {
         UNUserNotificationCenter.current().getPendingNotificationRequests { (requests) in
             print(requests.count)
         }
+        pop()
     }
     @IBAction func deleteTapped() {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        pop() // remove current interface, revert back to previous
     }
     
     override func willActivate() {

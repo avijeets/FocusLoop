@@ -9,6 +9,7 @@
 import UIKit
 import WatchConnectivity
 import CoreData
+import NotificationCenter
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
@@ -75,7 +76,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         saveContext()
         
         //Notification Config
-        let notif = Notification(name: Notification.Name(rawValue: "FocusInfo"))
+        let notif = Notification(name: Notification.Name("FocusInfo"))
         NotificationCenter.default.post(notif)
     }
     

@@ -34,6 +34,7 @@ class DistractionsInterfaceController: WKInterfaceController {
         let distraction = distractions[rowIndex]
         let date = Date()
         WCSession.default.transferUserInfo(["date": date, "name": distraction])
+        pop()
     }
 
 }
