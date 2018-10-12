@@ -1,6 +1,6 @@
 # FocusLoop
 
-For a while, I've been thinking about how great and straightforward Apple Watch's Activity loops are in showing you how active you *really* are on a daily basis. Now ,imagine there was a similar diagram for your productivity levels.
+For a while, I've been thinking about how great and straightforward Apple Watch's Activity loops are in showing you how active you *really* are on a daily basis. Now, imagine there was a similar diagram for your productivity levels.
 
 ### y tho
 
